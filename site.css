@@ -1,0 +1,91 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #505050;
+
+}
+
+header {
+    background-color: white;
+    align-items: center;
+    display: flex;
+    grid-area: header;
+}
+
+main {
+    background-color: antiquewhite;
+    padding: 10px;
+    margin-top: 10px;
+    grid-area: main;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+    grid-area: footer;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+
+}
+
+#menu {
+    float: right;
+    
+}
+
+#menu li {
+    display: inline-block;
+    background-color: rgb(121, 53, 53);
+    color: white;
+    padding: 8px;
+    grid-area: menu;
+
+}
+
+#menu li a {
+    text-decoration: none;
+    color:white !important;
+}
+
+#menu li.active {
+    background-color:purple;
+}
+
+h1, h2 {
+    color:tomato;
+}
+
+#logo {
+    border: inset 2px;
+    border-radius: 70px;
+}
+#siteName {
+    margin-left: 50px;
+}
+.chapters {
+    font-weight: bold;
+}
+
+.vulnerabilities {
+    background-color: white;
+    border: inset 1px;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+#contactFormInfo {
+    padding:10px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+    grid-template-columns: auto 250px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Fun-erable webpage</title>
+        <link rel="stylesheet" href="site.css"/>
+    </head>
+<body>
+    <div class="container">
+<header>
+    <img id="logo" src="img/logo.jpg" alt="header_logo">
+    <h1 id="siteName">fun-erabilities</h1>
+    
+    <ul id="menu">
+        <li><a href="index.html">HOME</a></li>
+        <li class="active"><a href="webshop.html">WEBSHOP</a></li>
+        <li><a href="myvulns.html">MY_VULNS</a></li>
+    </ul>
+
+</header>
+
+<main>
+<form id="putOrderForm">
+    <div id="orderInfo">
+    <div><label for="orderid">OrderId:</label></div>
+    <div><input type="text" id="orderid"/></div>
+
+    <div><label for="amount">Amount:</label></div>
+    <div><input type="text" id="amount"/></div>
+
+    <div><label for="code">Code:</label></div>
+    <div><input type="text" id="code"/></div>
+
+    <div><label for="desc">Description:</label></div>
+    <div><input type="text" id="desc"/></div>
+
+    <div><input type="submit" id="submit" value="Give order"></div>
+</div>
+</form>
+<form id="getOrdersForm">
+    <div>
+        <div><input type="submit" id="submit" value="Get orders"></div>
+    </div>
+    <table></table>
+    <div id="showOrders"></div>
+</table>
+
+</form>
+</main>
+
+<aside>
+    <form id="contactForm">
+        <h2>Contact me</h2>
+        <div id="contactFormInfo">
+
+            <div><label for="name">Name:</label></div>
+            <div><input type="text" id="name"/></div>
+            <div><label for="email">Email:</label></div>
+            <div><input type="text" id="email"/></div>
+            <div><label for="message">Message:</label></div>
+            <div><input type="text" id="message"/></div>
+
+            <div><input type="submit" id="submit" value="Contact Me"></div>
+
+        </div>
+    </form>
+
+</aside>
+
+
+<footer>
+
+    &copy; Copyright Erik Douwes 2021
+
+</footer>
+
+
+
+
+</div>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+<script src="jquery360.js"></script>
+<script src="portal.js"></script>
+</body>
+
+
+</html>

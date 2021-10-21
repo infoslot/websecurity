@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Fun-erable webpage</title>
+        <link rel="stylesheet" href="site.css"/>
+    </head>
+<body>
+    <div class="container">
+<header>
+    <img id="logo" src="img/logo.jpg" alt="header_logo">
+    <h1 id="siteName">fun-erabilities</h1>
+    
+    <ul id="menu">
+        <li><a href="index.html">HOME</a></li>
+        <li class="active"><a href="webshop.html">WEBSHOP</a></li>
+        <li><a href="portal.html">MY_VULNS</a></li>
+    </ul>
+
+</header>
+
+<main>
+    <div class="vulnerabilities">
+<p class="chapters">Request my API</p>
+<p>
+    <form id="callApi" action="#">
+        <div><label for="orderId">Give some order is: </label></div>
+        <div><input type="text" id="orderId"/></div>
+        <div><input type="submit" value="Find"></div>
+    </form>
+    <div id="apiResult"><p>De resultaten komen hier</p></div>
+</div>
+
+</main>
+
+<aside>
+    <form id="contactForm">
+        <h2>Contact me</h2>
+        <div id="contactFormInfo">
+
+            <div><label for="name">Name:</label></div>
+            <div><input type="text" id="name"/></div>
+            <div><label for="email">Email:</label></div>
+            <div><input type="text" id="email"/></div>
+            <div><label for="message">Message:</label></div>
+            <div><input type="text" id="message"/></div>
+
+            <div><input type="submit" id="submit" value="Contact Me">/></div>
+
+        </div>
+    </form>
+
+</aside>
+
+
+<footer>
+
+    &copy; Copyright Erik Douwes 2021
+
+</footer>
+
+
+
+
+</div>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+<script src="jquery360.js"></script>
+<script src="shop.js"></script>
+</body>
+
+
+</html>

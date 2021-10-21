@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Fun-erable webpage</title>
+    <link rel="stylesheet" href="site.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img id="logo" src="img/logo.jpg" alt="header_logo">
+            <h1 id="siteName">fun-erabilities</h1>
+
+            <ul id="menu">
+                <li class="active"><a href="index.html">HOME</a></li>
+                <li><a href="webshop.html">WEBSHOP</a></li>
+                <li><a href="portal.html">MY_VULNS</a></li>
+            </ul>
+
+        </header>
+
+        <main>
+
+            <div class="vulnerabilities">
+                <p class="chapters">Try to find something in the DOM:</p>
+                <p class="vulns">
+                <form id="searchForm">
+                    <div id="searchFormInfo">
+                        <div><label for="search">Search:</label>
+                        </div>
+                        <div><input type="text" id="search" />
+                        </div>
+                        <div><input type="submit" value="search">
+                        </div>
+                    </div>
+                </form>
+                </p>
+                <div id="searchResult"></div>
+            </div>
+
+
+            <div class="vulnerabilities">
+                <p class="chapters">Try to find something from the API:</p>
+                <p class="vulns">
+                <form id="searchFormAPI">
+                    <div id="searchFormInfoAPI">
+                        <div><label for="search">Search:</label>
+                        </div>
+                        <div><input type="text" id="searchAPI" />
+                        </div>
+                        <div><input type="submit" value="search">
+                        </div>
+                    </div>
+                </form>
+                </p>
+                <div id="searchResultAPI"></div>
+            </div>
+
+
+
+
+            <div class="vulnerabilities">
+                <p class="chapters">Try to get authenticated:</p>
+                <p class="vulns">
+                <form id="loginForm" action="http://localhost/login.php">
+                    <div id="loginFormInfo">
+                        <div><label for="user">Username:</label>
+                        </div>
+                        <div><input type="text" id="username" /><br />
+                        </div>
+                        <div><label for="password">Password</label>
+                        </div>
+                        <div><input type="password" id="password" />
+                        </div>
+                        <div><input type="submit" value="Login">
+                        </div>
+                    </div>
+                </form>
+                <div>
+                    <form id="logoutForm">
+                        <div><input type="submit" value="Logout">
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <form id="getSecretContent">
+                        <div><input type="submit" value="getSecretContent">
+                        </div>
+
+                    </form>
+                </div>
+                </p>
+                <div id="showResult">SecretContent: </div>
+            </div>
+        </main>
+
+        <aside>
+            <form id="contactForm">
+                <h2>Contact me</h2>
+                <div id="contactFormInfo">
+
+                    <div><label for="name">Name:</label></div>
+                    <div><input type="text" id="name" /></div>
+                    <div><label for="email">Email:</label></div>
+                    <div><input type="text" id="email" /></div>
+                    <div><label for="message">Message:</label></div>
+                    <div><input type="text" id="message" /></div>
+
+                    <div><input type="submit" id="submit" value="Contact Me">/></div>
+
+                </div>
+            </form>
+        </aside>
+
+
+        <footer>
+
+            &copy; Copyright Erik Douwes 2021
+
+        </footer>
+
+
+
+
+    </div>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>-->
+    <script src="jquery360.js"></script>
+    <script src="index.js"></script>
+</body>
+
+
+</html>
